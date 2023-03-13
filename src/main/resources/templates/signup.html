@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<section >
+
+<div class="container">
+<div clas="row">
+<div class="col-mid-8 offset-md-2">
+
+<div class="my-card mt-3">
+<h1 class="text-center"> Register Here</h1>
+<img alt="Logo" th:src="@{../image/logo.png}" style="width: 50px; height: 50px; "  class="mx-auto d-block" >
+
+ <form action=""  th:action="@{/do_register}" method="post">
+ 
+ 
+ <!-- NAME FIELD -->
+ <div class="form-group" width="50px">
+    <label for="exampleInputEmail1">Your Name</label>
+    <input type="text" class="form-control"
+     id="name_field" aria-describedby="emailHelp" placeholder="Enter Here" required="true">
+   
+  </div>
+ 
+ <!-- EMAIL FIELD -->
+ <div class="form-group" width="50px">
+    <label for="exampleInputEmail1">Your Email</label>
+    <input type="email" class="form-control"
+     id="email_field" aria-describedby="emailHelp" placeholder="Enter Here" required="true">
+   
+  </div>
+ 
+ <!-- PASSWORD FIELD -->
+ <div class="form-group" width="50px">
+    <label for="exampleInputEmail1">Your Password</label>
+    <input type="password" class="form-control"
+     id="password_field" aria-describedby="emailHelp" placeholder="Enter Here" required="true">
+   
+  </div>
+ 
+ 
+  <!-- USER ABOUT FIELD -->
+ 
+ 
+ <div class="form-group" width="50px">
+   <textarea rows="10" placeholder="Enter Something about Yourself" class="form-control"></textarea>
+   
+  </div>
+ 
+ 
+  <!--Button Field-->
+  
+ <div class="container text-center">
+ <button type="submit" class="btn btn-primary text-white"> Submit</button>
+ <button type="reset" class="btn btn-warning text-white"> Reset</button>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </form>
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>	
+</body>
+</html>
